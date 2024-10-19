@@ -9,6 +9,7 @@ use winapi::um::winuser::SW_SHOW;
 
 fn main() {
     let mut args = env::args();
+    args.next().unwrap();
 
     let controller_title = args.next().expect("first arg must be the title of SCRCPY");
     let area_inp = args.next().expect("second arg must be reconition rect ('<left top X>,<left top Y>,<width>,<height>', points relate to left top corner of SCRCPY), example: 200,50,300,100");
