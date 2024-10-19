@@ -25,4 +25,19 @@
 - [文本检测模型](https://ocrs-models.s3-accelerate.amazonaws.com/text-detection.rten)，将它放置于`blew_up_monkey_calc.exe`所在目录的`models`目录下。
 - [文本识别模型](https://ocrs-models.s3-accelerate.amazonaws.com/text-recognition.rten)，将它放置于`blew_up_monkey_calc.exe`所在目录的`models`目录下。
 
-接下来，将手机连接至电脑，开启SCRCPY，再启动`blew_up_monkey_calc.exe`；若一切正常，本项目将自动开始进行图像识别。在小猿口算中开始匹配，在题目界面，项目将自动开始推进题目。
+接下来，将手机连接至电脑，开启SCRCPY，通过终端启动`blew_up_monkey_calc.exe`。假设工作目录为其所在的目录，则按照如下形式传入参数：
+注意，所有坐标均从SCRCPY窗口左上角为原点，而非屏幕左上角。
+
+```
+.\blew_up_monkey_calc.exe <SCRCPY窗口标题> <检测区域矩形>
+```
+
+检测区域矩形（单位：像素）的形式如下：
+
+```
+<矩形左上角X>,<矩形左上角Y>,<矩形宽度>,<矩形高度>
+```
+
+若一切正常，本项目将自动开始进行图像识别。在小猿口算中开始匹配，在题目界面，将自动推进题目。
+
+控制台将输出每次文本识别的结果，与题目作答结果。
