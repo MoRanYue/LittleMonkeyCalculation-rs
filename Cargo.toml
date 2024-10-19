@@ -1,6 +1,6 @@
 [package]
 name = "blow_up_monkey_calc"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [dependencies]

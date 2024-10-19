@@ -98,7 +98,7 @@ checksum = "b81e1519b0d82120d2fd469d5bfb2919a9361c48b02d82d04befc1cdd2002452"
 
 [[package]]
 name = "blow_up_monkey_calc"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "bytemuck",
  "gif",
